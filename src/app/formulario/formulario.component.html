@@ -95,6 +95,7 @@
                             <select name="nivel" id="nivel" class="width3" formControlName="nivel" [ngClass]="{
                                 'is-invalid': forms.get('nivel')?.invalid && (forms.get('nivel')?.dirty || forms.get('nivel')?.touched), 
                                 'is-valid':  (forms.get('nivel')?.dirty || forms.get('nivel')?.touched)}">
+                                <option value="">~Seleccione una opcion~</option>
                                 <option value="primero">Primero</option>
                                 <option value="segundo">Segundo</option>
                                 <option value="tercero">Tercero</option>
@@ -108,6 +109,7 @@
                             <select name="municipio" id="municipio" class="width3" formControlName="municipio" [ngClass]="{
                                 'is-invalid': forms.get('municipio')?.invalid && (forms.get('municipio')?.dirty || forms.get('municipio')?.touched), 
                                 'is-valid': forms.get('municipio')?.valid &&(forms.get('municipio')?.dirty || forms.get('municipio')?.touched)}">
+                                <option value="">~Seleccione una opcion~</option>
                                 <option value="municipio1">Saltillo</option>
                                 <option value="municipio2">Arteaga</option>
                                 <option value="municipio3">Ramos Arizpe</option>
@@ -121,6 +123,7 @@
                             <select name="asunto" id="asunto" class="width3" formControlName="asunto" [ngClass]="{
                                 'is-invalid': forms.get('asunto')?.invalid && (forms.get('asunto')?.dirty || forms.get('asunto')?.touched), 
                                 'is-valid': forms.get('asunto')?.valid && (forms.get('asunto')?.dirty || forms.get('asunto')?.touched)}">
+                                <option value="">~Seleccione una opcion~</option>
                                 <option value="asunto 1">Entrega de papeleria</option>
                                 <option value="asunto 2">Junta de padres de familia</option>
                                 <option value="asunto 3">Reporte</option>
