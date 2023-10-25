@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 import Swal from 'sweetalert2';
 
 @Component({
@@ -10,7 +11,7 @@ import Swal from 'sweetalert2';
 export class FormularioComponent implements OnInit{
   forms!: FormGroup;
 
-  constructor(private fb: FormBuilder){
+  constructor(private fb: FormBuilder, private router: Router){
     this.forms = this.fb.group({
       titular:['', [Validators.required, Validators.minLength(10)]],
       curp:['', [Validators.required, Validators.pattern(/^([a-zA-Z]{4})(\d{6})([a-zA-Z]{6})(\d{2})$/)]],
@@ -46,5 +47,6 @@ export class FormularioComponent implements OnInit{
       })
     }
   }
+
 }
 
