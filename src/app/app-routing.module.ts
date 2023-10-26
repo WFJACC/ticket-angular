@@ -31,12 +31,12 @@ const routes: Routes = [
   {
     path: "admin-list",
     component: AdminListComponent
+  },
+  {
+    path: '**',
+    redirectTo: "formulario",
+    pathMatch: 'full'
   }
-  // {
-  //   path: '**',
-  //   redirectTo: "formulario",
-  //   pathMatch: 'full'
-  // }
 ];
 
 @NgModule({
