@@ -11,6 +11,7 @@ import {MatInputModule} from '@angular/material/input';
 import {MatIconModule} from '@angular/material/icon';
 
 
+
 @NgModule({
   declarations: [],
   imports: [
@@ -32,7 +33,7 @@ import {MatIconModule} from '@angular/material/icon';
     MatSortModule,
     MatFormFieldModule,
     MatInputModule,
-    MatIconModule
+    MatIconModule,
   ]
 })
 export class SharedModule { }

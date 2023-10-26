@@ -1,4 +1,4 @@
-import { AfterViewInit, Component, OnInit, ViewChild } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { MatPaginator } from '@angular/material/paginator';
 import { MatTableDataSource } from '@angular/material/table';
 import {MatSort, MatSortModule} from '@angular/material/sort';
@@ -13,7 +13,7 @@ import { AdminService } from '../services/admin.service';
   templateUrl: './admin-list.component.html',
   styleUrls: ['./admin-list.component.css']
 })
-export class AdminListComponent {
+export class AdminListComponent implements OnInit{
   ngOnInit(): void {
     this.obtenerAdmins();
   }
